@@ -1,0 +1,27 @@
+# Virtual Environment
+venv/
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Streamlit
+.streamlit/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# SQLite
+*.db
+*.sqlite3
+
+# Dados temporários
+data/raw/*.json
+
+# Sistema
+.DS_Store
+Thumbs.db
