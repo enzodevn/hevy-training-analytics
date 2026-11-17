@@ -1,5 +1,13 @@
+import sys
+from pathlib import Path
+
+# adiciona a raiz do projeto ao path
+ROOT_DIR = Path(__file__).resolve().parents[2]
+sys.path.append(str(ROOT_DIR))
+
 import streamlit as st
 import matplotlib.pyplot as plt
+from src.components.sync import render_sync_button
 from src.queries.overview_queries import (
     get_summary,
     get_weekly_volume,
@@ -13,6 +21,8 @@ st.set_page_config(
     page_icon="📊",
     layout="wide"
 )
+
+render_sync_button()
 
 st.title("📊 Overview")
 st.caption("Visão geral da sua atividade de treino no Hevy.")
