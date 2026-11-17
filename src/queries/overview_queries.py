@@ -1,7 +1,6 @@
 import sqlite3
 import pandas as pd
-
-DB_PATH = "data/hevy.db"
+from src.config import DB_PATH
 
 
 def run_query(query: str) -> pd.DataFrame:
